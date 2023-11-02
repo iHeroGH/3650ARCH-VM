@@ -40,7 +40,7 @@ public class IOHandler{
         this.outputContent = new ArrayList<String>();
 
         if(write){
-            // writeInit();
+            writeInit();
         }
 
         readFile();
@@ -401,7 +401,7 @@ public class IOHandler{
         this.outputContent.add("(" + functionName + ")");
 
         for(int i = 0; i < numLocals; i++){
-            this.outputContent.add("@" + i);
+            this.outputContent.add("@" + 0);
             this.outputContent.add("D=A");
             push();
         }
